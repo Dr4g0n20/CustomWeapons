@@ -1,0 +1,20 @@
+name: ChaosWeapons
+main: com.chaos.weapons.ChaosWeapons
+version: 1.0.0
+author: you
+description: 24 chaotic custom weapons and support items.
+commands:
+  weapon:
+    description: Chaos weapons command
+    usage: /weapon <give|list|info|guide|reload>
+    aliases: [cw]
+permissions:
+  weapons.use:
+    description: Use the custom items
+    default: true
+  weapons.give:
+    description: Get items with /weapon give
+    default: true
+  weapons.admin:
+    description: Give items to others and reload the config
+    default: op

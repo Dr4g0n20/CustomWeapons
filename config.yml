@@ -1,0 +1,36 @@
+# ChaosWeapons config
+
+explosions:
+  # Explosions from the items break blocks (the Anvil Hammer's anvils also land as real blocks).
+  block-damage: true
+  # Past this many explosions in one second, extra ones are particles only (lag protection).
+  max-per-second: 8
+
+# Areas where explosions never break blocks and anvils never land.
+# Format: "world,x1,y1,z1,x2,y2,z2"
+protected-regions: []
+#  - "world,-50,0,-50,50,255,50"
+
+thunder:
+  # true = real lightning (damage + fire), false = cosmetic lightning only
+  real-lightning: true
+
+# Cooldowns in seconds. 0 or missing = no cooldown.
+cooldowns:
+  anvil_hammer: 20
+  chicken_cannon: 1.5
+  yeet_stick: 0.5
+  swap_a_roo: 3
+  lag_spike_sword: 0.5
+  bonk_bat: 0.5
+  rubber_duck_blade: 2
+  medics_wand: 8
+  zoomies_whistle: 15
+  bubble_wand: 12
+  grappling_hook: 3
+  lucky_coin: 30
+  fake_death_totem: 20
+
+# Optional base item overrides using 1.12 material names, e.g.
+#   yeet_stick: BLAZE_ROD
+materials: {}
